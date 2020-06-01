@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="_style/index.css">
+    </head>
+    <body>
+        <header>
+        <div id="menu-bar">
+            <a href="#"><img src="_imagens/McDonald's-Logo.wine.svg" id="logo"></a>
+            <div id="page_areas">
+                <p>Contact</p>
+                <p>About Us</p>
+                <p><span class="arrow-up"></span>Our menu</p>
+            </div>
+            <nav id="menu">
+                <a href="#" id="order-now"><p>Order now</p></a> 
+                <a href="#">Download our app</a>
+            </nav>
+        </div>
+        </header>
+        <section id="hero">
+            <img src="_imagens/hero-image.jpg">
+            <p>I'm Lovin' it</p>
+        </section>
+        <section id="content">
+            <div id="meal-area">
+                <div class="meal-area_content"> <img src="_imagens/combo-meal-coca.jpg"><a href="#combo"><p>Combo Meal</a></div>
+                <div class="meal-area_content"><img src="_imagens/burger.jpg"><a href="#burg"><p>Burgers</a></div>
+                <div class="meal-area_content"><img src="_imagens/Iced_Caramel_Macchiato.jpg"><a href="#mcCafe"><p>McCafe&reg; Drinks</a></div>
+                <span  id="combo"></span>
+            </div>
+            <p ><span class="Title">Combo Meal</span></p>
+            <div class="main-area">
+                <div class="inner_main-area_content"><img src="_imagens/combo-meal-sprite.jpg">
+                <p>Artisan Grilled Chicken Sandwich,<br> Sprite (Medium), Medium French Fries
+                 </div>
+
+                <div class="inner_main-area_content"><img src="_imagens/combo-meal-coca.jpg">
+                <p>Buttermilk Crispy Chicken Sandwich,<br> Coca-Cola (Medium), Medium French Fries
+                 </div>
+                <span id="burg"></span>
+            </div>
+            
+            <p ><span class="Title">Burgers</span></p>
+            <div class="main-area">
+                <div class="inner_main-area_content"><img src="_imagens/t-mcdonalds-Double-Quarter-Pounder-with-Cheese.jpg" >
+                <p>Double Quarter Pounder&reg; with Cheese</div>
+                <div class="inner_main-area_content"><img src="_imagens/t-mcdonalds-Big-Mac.jpg"  >
+                <p>Big Mac&reg;</div>
+            </div>
+            
+            <p id="mcCafe"><span class="Title">McCafé&reg; Drinks</span></p>
+            <div class="main-area">
+                <div class="inner_main-area_content"><img src="_imagens/t-mcdonalds-cappuccino.jpg" >
+                <p>Cappuccino</div>
+                <div class="inner_main-area_content"><img src="_imagens/Iced_Caramel_Macchiato.jpg"  >
+                <p>Iced Caramel Macchiato</div>
+            </div>
+            <footer>
+                <div id="left">
+                    <p>Terms &amp; Conditions</p>
+                    <p>Acessibility</p>
+                    <p>About Us</p>
+                </div>
+                <div id="right">
+                    <img src="_imagens/McDonald's-Logo.wine.svg" id="footer-logo">
+                    <p>&copy; <span id="copy"></span>  McDonald </p>
+                </div>             
+            </footer>
+        </section>
+        <script>
+            var year = document.querySelector('#copy');
+            var date = new Date();
+            var currentYear = date.getFullYear();
+            year.innerText =  currentYear; 
+        </script>
+    </body>
+</html>
